@@ -1,9 +1,9 @@
 ﻿{
   "id": "RestSitesInUnknownRooms",
-  "name": "RestSitesInUnknownRooms",
+  "name": "Rest Sites in Unknown Rooms",
   "author": "Ajama",
-  "description": "Slay the Spire 2 mod created from a template for use with BaseLib",
-  "version": "v0.0.0",
+  "description": "Adds a configurable chance for Rest Sites to appear in Unknown (?) Rooms.",
+  "version": "v0.9.0",
   "min_game_version": "0.107.0",
   "has_pck": true,
   "has_dll": true,
