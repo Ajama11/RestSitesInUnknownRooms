@@ -46,11 +46,9 @@
         <Compile Remove="RestSitesInUnknownRooms/**"/>
         <Compile Remove="materials/**"/>
         <Compile Remove="shaders/**"/>
-        <Compile Remove="images/**"/>
         <EmbeddedResource Remove="RestSitesInUnknownRooms/**"/>
         <EmbeddedResource Remove="materials/**"/>
         <EmbeddedResource Remove="shaders/**"/>
-        <EmbeddedResource Remove="images/**"/>
     </ItemGroup>
 
     <ItemGroup>
@@ -59,6 +57,11 @@
         <None Include="RestSitesInUnknownRooms.json"/>
         <None Include="project.godot"/>
         <None Include="RestSitesInUnknownRooms/**"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="images\ui\run_history\unknown_rest_site.png" />
+      <Content Include="images\ui\run_history\unknown_rest_site_outline.png" />
     </ItemGroup>
 
     <Target Name="CheckDependencyPaths">
