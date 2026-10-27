@@ -60,6 +60,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Content Include="images\atlases\ui_atlas.sprites\map\icons\map_unknown_rest_site.tres" />
       <Content Include="images\ui\run_history\unknown_rest_site.png" />
       <Content Include="images\ui\run_history\unknown_rest_site_outline.png" />
     </ItemGroup>

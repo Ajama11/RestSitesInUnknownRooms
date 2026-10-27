@@ -8,13 +8,13 @@ using MegaCrit.Sts2.Core.Rooms;
 namespace RestSitesInUnknownRooms.RestSitesInUnknownRoomsCode.Patches;
 
 [HarmonyPatch]
-public static class IconAndNamePatches
+public static class IconAndNameTranspilerPatches
 {
     [HarmonyPatch(typeof(NMapPointHistoryHoverTip), nameof(NMapPointHistoryHoverTip._Ready))]
     [HarmonyTranspiler]
     static List<CodeInstruction> RunHistoryTranspiler(IEnumerable<CodeInstruction> instructions, ILGenerator generator)
     {
-        MethodInfo isRoomTypeRestSite = typeof(IconAndNamePatches).Method(nameof(IsRoomTypeRestSite));
+        MethodInfo isRoomTypeRestSite = typeof(IconAndNameTranspilerPatches).Method(nameof(IsRoomTypeRestSite));
 
         Label originalDefaultCaseLabel = generator.DefineLabel();
         Label myDefaultCaseLabel = generator.DefineLabel();
@@ -95,7 +95,7 @@ public static class IconAndNamePatches
     [HarmonyTranspiler]
     static List<CodeInstruction> TopBarTranspiler(IEnumerable<CodeInstruction> instructions, ILGenerator generator)
     {
-        MethodInfo isRoomTypeRestSite = typeof(IconAndNamePatches).Method(nameof(IsRoomTypeRestSite));
+        MethodInfo isRoomTypeRestSite = typeof(IconAndNameTranspilerPatches).Method(nameof(IsRoomTypeRestSite));
 
         Label originalDefaultCaseLabel = generator.DefineLabel();
         Label myDefaultCaseLabel = generator.DefineLabel();
