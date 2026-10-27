@@ -7,7 +7,7 @@ namespace RestSitesInUnknownRooms.RestSitesInUnknownRoomsCode.Patches;
 [HarmonyPatch(typeof(UnknownMapPointOdds))]
 public static class UnknownMapPointOddsPatches
 {
-    public const float RestSiteChance = 0.94f;
+    public const float RestSiteChance = 0.05f;
     
     [HarmonyPatch(typeof(RunOddsSet), nameof(RunOddsSet.UnknownMapPoint), MethodType.Getter)]
     [HarmonyPostfix]
